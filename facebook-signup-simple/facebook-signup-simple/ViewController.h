@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import "singupFromViewController.h"
+#import <FacebookSDK/FacebookSDK.h>
+@interface ViewController : UIViewController <FBLoginViewDelegate>
+{
+@private
+    
+    singupFromViewController *_signupForm;
+    
+    
+}
+- (IBAction)singupWithFacebook:(id)sender;
+@property (strong, nonatomic) IBOutlet FBLoginView *loginView;
+- (IBAction)signupNarmal:(id)sender;
 @end
