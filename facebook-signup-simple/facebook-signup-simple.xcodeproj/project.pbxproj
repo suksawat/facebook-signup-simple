@@ -28,6 +28,7 @@
 		188FE26E17378EDA00BDD661 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188FE26D17378EDA00BDD661 /* AdSupport.framework */; };
 		188FE27017378EE100BDD661 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188FE26F17378EE100BDD661 /* Accounts.framework */; };
 		188FE27217378FC200BDD661 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 188FE27117378FC200BDD661 /* libsqlite3.dylib */; };
+		188FE2751737AE0A00BDD661 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FE2741737AE0A00BDD661 /* UserModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +48,6 @@
 		188FE2531737564100BDD661 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		188FE2541737564100BDD661 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		188FE2571737564100BDD661 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		188FE25E1737718C00BDD661 /* singupFromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = singupFromViewController.h; path = ../singupFromViewController.h; sourceTree = "<group>"; };
 		188FE25F1737718C00BDD661 /* singupFromViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = singupFromViewController.m; path = ../singupFromViewController.m; sourceTree = "<group>"; };
 		188FE2601737718C00BDD661 /* singupFromViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = singupFromViewController.xib; path = ../singupFromViewController.xib; sourceTree = "<group>"; };
 		188FE263173788FC00BDD661 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -58,6 +58,9 @@
 		188FE26D17378EDA00BDD661 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		188FE26F17378EE100BDD661 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		188FE27117378FC200BDD661 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		188FE2731737AE0A00BDD661 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserModel.h; path = "facebook-signup-simple/UserModel.h"; sourceTree = "<group>"; };
+		188FE2741737AE0A00BDD661 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserModel.m; path = "facebook-signup-simple/UserModel.m"; sourceTree = "<group>"; };
+		188FE2921737C1EA00BDD661 /* singupFromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singupFromViewController.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		188FE22F1737564100BDD661 = {
 			isa = PBXGroup;
 			children = (
+				188FE2761737AE1C00BDD661 /* Model */,
 				188FE27117378FC200BDD661 /* libsqlite3.dylib */,
 				188FE26F17378EE100BDD661 /* Accounts.framework */,
 				188FE26D17378EDA00BDD661 /* AdSupport.framework */,
@@ -119,8 +123,8 @@
 		188FE2411737564100BDD661 /* facebook-signup-simple */ = {
 			isa = PBXGroup;
 			children = (
-				188FE25E1737718C00BDD661 /* singupFromViewController.h */,
 				188FE25F1737718C00BDD661 /* singupFromViewController.m */,
+				188FE2921737C1EA00BDD661 /* singupFromViewController.h */,
 				188FE2601737718C00BDD661 /* singupFromViewController.xib */,
 				188FE24A1737564100BDD661 /* AppDelegate.h */,
 				188FE24B1737564100BDD661 /* AppDelegate.m */,
@@ -144,6 +148,15 @@
 				188FE2511737564100BDD661 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		188FE2761737AE1C00BDD661 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				188FE2731737AE0A00BDD661 /* UserModel.h */,
+				188FE2741737AE0A00BDD661 /* UserModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +231,7 @@
 				188FE24C1737564100BDD661 /* AppDelegate.m in Sources */,
 				188FE2551737564100BDD661 /* ViewController.m in Sources */,
 				188FE2611737718C00BDD661 /* singupFromViewController.m in Sources */,
+				188FE2751737AE0A00BDD661 /* UserModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +362,7 @@
 				188FE25D1737564100BDD661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <FacebookSDK/FacebookSDK.h>
+#import "UserModel.h"
 @interface singupFromViewController : UIViewController <UITextFieldDelegate>
+@property (strong,nonatomic) UserModel *user;
+@property (strong, nonatomic) IBOutlet UITextField *usernameText;
+@property (strong, nonatomic) IBOutlet UITextField *passwordText;
+@property (strong, nonatomic) IBOutlet UITextField *firstnameText;
+@property (strong, nonatomic) IBOutlet UITextField *lastnameText;
 
 @end

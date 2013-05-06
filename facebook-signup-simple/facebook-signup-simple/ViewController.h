@@ -18,6 +18,6 @@
     
 }
 - (IBAction)singupWithFacebook:(id)sender;
-@property (strong, nonatomic) IBOutlet FBLoginView *loginView;
+
 - (IBAction)signupNarmal:(id)sender;
 @end
